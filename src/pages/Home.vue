@@ -8,7 +8,7 @@
       </mt-index-section>
     </mt-index-list>
   </div>
-</template>s
+</template>
 
 <script>
   export default {

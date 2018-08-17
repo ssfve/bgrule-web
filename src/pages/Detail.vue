@@ -1,6 +1,12 @@
 <template>
   <div v-model="game">
-    <img src="" alt="" class="cover">
+    <mt-header :title="game.nameCN">
+      <router-link to="/" slot="left">
+        <mt-button icon="back"></mt-button>
+      </router-link>
+      <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
+    <img src="../assets/caption.jpg" alt="" class="cover">
     <div></div>
     <div><span>游戏名：</span><span>{{game.nameCN}}</span></div>
     <div><span>设计美术：</span><span>{{game.designersCN}}</span></div>

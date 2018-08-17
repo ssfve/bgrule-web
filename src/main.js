@@ -6,8 +6,9 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
 import 'mint-ui/lib/style.css'
+
 import {
-  Button, IndexList, IndexSection, Cell, Search
+  Button, IndexList, IndexSection, Cell, Search, Header
 }
 from 'mint-ui'
 
@@ -16,6 +17,7 @@ Vue.component(IndexList.name, IndexList)
 Vue.component(IndexSection.name, IndexSection)
 Vue.component(Cell.name, Cell)
 Vue.component(Search.name, Search)
+Vue.component(Header.name, Header)
 
 Vue.config.productionTip = false
 
