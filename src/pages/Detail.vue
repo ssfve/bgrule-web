@@ -4,7 +4,7 @@
       <router-link to="/" slot="left">
         <mt-button icon="back"></mt-button>
       </router-link>
-      <mt-button icon="more" slot="right"></mt-button>
+      <mt-button icon="more" slot="right" v-on:click="$emit('toggle-menu')" id="more-btn"></mt-button>
     </mt-header>
     <img src="../assets/caption.jpg" alt="" class="cover">
     <div class="grid-view">

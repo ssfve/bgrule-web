@@ -19,6 +19,11 @@ Vue.component(Cell.name, Cell)
 Vue.component(Search.name, Search)
 Vue.component(Header.name, Header)
 
+import SliderMenu from './components/SliderMenu.vue'
+
+Vue.component('slider-menu', SliderMenu)
+
+
 Vue.config.productionTip = false
 
 new Vue({
