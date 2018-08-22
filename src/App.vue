@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <router-view
-      class="child-view"
-      v-on:toggle-menu="toggleMenu">
+    <router-view class="child-view" :toggleMenu="toggleMenu">
     </router-view>
-    <slider-menu v-if="showSlider" :toggleMenu="toggleMenu"></slider-menu>
+    <c-slider-menu v-if="showSlider" :toggleMenu="toggleMenu"></c-slider-menu>
   </div>
 </template>
 
@@ -19,7 +17,6 @@ export default {
 
   methods: {
     toggleMenu() {
-      console.log('toggleMenu')
       this.showSlider = !this.showSlider
     },
   },

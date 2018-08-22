@@ -1,5 +1,6 @@
 <template>
   <div>
+    <c-header title="桌游怎么玩" :toggleMenu="toggleMenu"></c-header>
     <mt-index-list
       v-infinite-scroll="loadMore"
       infinite-scroll-disabled="loading"
@@ -23,6 +24,7 @@
 
 <script>
   export default {
+    props: ['toggleMenu'],
     data() {
       return {
         loading: false,

@@ -21,9 +21,11 @@ Vue.component(Search.name, Search)
 Vue.component(Header.name, Header)
 Vue.component(Spinner.name, Spinner)
 
-import SliderMenu from './components/SliderMenu.vue'
+import CSliderMenu from './components/CSliderMenu.vue'
+import CHeader from './components/CHeader.vue'
 
-Vue.component('slider-menu', SliderMenu)
+Vue.component('c-slider-menu', CSliderMenu)
+Vue.component('c-header', CHeader)
 
 Vue.config.productionTip = false
 

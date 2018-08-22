@@ -1,11 +1,6 @@
 <template>
   <div v-model="game">
-    <mt-header :title="game.nameCN">
-      <router-link to="/" slot="left">
-        <mt-button icon="back"></mt-button>
-      </router-link>
-      <mt-button icon="more" slot="right" v-on:click="$emit('toggle-menu')" id="more-btn"></mt-button>
-    </mt-header>
+    <c-header :title="game.nameCN" :toggleMenu="toggleMenu"></c-header>
     <img src="../assets/caption.jpg" alt="" class="cover">
     <div class="grid-view">
       <div class="grid-item">
@@ -74,6 +69,7 @@
 
 <script>
   export default {
+    props: ['toggleMenu'],
     data() {
       return {
         game: {}
