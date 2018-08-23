@@ -5,42 +5,36 @@
     <div class="grid-view">
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <span class="rate-number">7.8</span>
         </div>
         <h6 class="badge-comment">24.6k</h6>
       </div>
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <img src="../assets/interface/year.svg" alt="" class="inner-badge">
         </div>
         <h6 class="badge-comment">{{game.yearpublished}}</h6>
       </div>
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <img src="../assets/interface/weight.svg" alt="" class="inner-badge">
         </div>
         <h6 class="badge-comment">2014</h6>
       </div>
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <img src="../assets/interface/age.svg" alt="" class="inner-badge">
         </div>
         <h6 class="badge-comment">2014</h6>
       </div>
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <img src="../assets/interface/players.svg" alt="" class="inner-badge">
         </div>
         <h6 class="badge-comment">2014</h6>
       </div>
       <div class="grid-item">
         <div class="badge">
-          <img src="../assets/interface/37474F.svg" alt="">
           <img src="../assets/interface/clock.svg" alt="" class="inner-badge">
         </div>
         <h6 class="badge-comment">2014</h6>
@@ -105,20 +99,25 @@
 
   .badge {
     position: relative;
+    background-image: url(/img/37474F.b7933af9.svg);
+    background-repeat: no-repeat;
+    height: 62px;
   }
 
   .rate-number {
     position: absolute;
-    top: 24%;
-    left: 19%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.2em;
     color: #fff;
   }
 
   .inner-badge {
     position: absolute;
-    top: 16%;
-    left: 18%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
   }

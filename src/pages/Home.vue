@@ -114,6 +114,7 @@
 
   .item-cover {
     height: 170px;
+    width: 100%;
   }
 
   .item-title {
